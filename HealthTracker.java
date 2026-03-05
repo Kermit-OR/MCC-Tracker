@@ -64,10 +64,15 @@ public class HealthTracker {
         return this.weight;
     }
 
-    public double getHeightInInches() {
+    public int getHeightInInches() {
         return this.height;
     }
 
+    /**
+     * Get height in string form (feet and inches)
+     * 
+     * @return string with feet and inches form
+     */
     public String getHeight() {
         int feet = this.height / 12;
         int inches = this.height % 12;
@@ -78,8 +83,8 @@ public class HealthTracker {
     // other required methods
     @Override
     public String toString() {
-        return "HealthTracker: weight = " + this.weight +
-                ", height = " + this.height;
+        return "Weight = " + this.weight +
+                ", Height = " + this.height;
     }
 
     @Override

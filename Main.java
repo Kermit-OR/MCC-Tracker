@@ -15,6 +15,11 @@ public class Main {
 
         // Test for setWeight method
         // testSetWeight();
+
+        DietTracker myDiet = new DietTracker();
+        myDiet.setProtein(0);
+
+        System.out.println("My diet tracker = " + myDiet);
     }
 
     // public static void testSetWeight() {
