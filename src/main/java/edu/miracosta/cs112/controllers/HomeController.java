@@ -16,10 +16,10 @@ public class HomeController {
     Button LoginEnabler;
 
     @FXML
-    private TextField usernameField; // optional: bind these in your FXML
+    private TextField usernameField;
 
     @FXML
-    private PasswordField passwordField; // optional: bind these in your FXML
+    private PasswordField passwordField;
 
     @FXML
     public void LoginEnabler(ActionEvent event) {

@@ -20,4 +20,6 @@ public class MainApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    //All test usernames and passwords are in controllers folder in PlaceboLoginImpl
 }

@@ -7,7 +7,8 @@ public class PlaceboLoginImpl {
     private final String[] passwords = new String[10];
 
     public PlaceboLoginImpl() {
-        // Manually filled usernames
+        //Random names and passwords that were only generated for testing.
+
         usernames[0] = "alice";
         usernames[1] = "bob";
         usernames[2] = "carol";
@@ -19,7 +20,7 @@ public class PlaceboLoginImpl {
         usernames[8] = "ivan";
         usernames[9] = "judy";
 
-        // Manually filled passwords
+
         passwords[0] = "alicePass";
         passwords[1] = "bobPass";
         passwords[2] = "carolPass";
@@ -44,7 +45,7 @@ public class PlaceboLoginImpl {
             throw new InvalidCredentialsException("Password cannot be empty.");
         }
 
-        // Find username index
+        //checks if the username exist
         int idx = -1;
         for (int i = 0; i < usernames.length; i++) {
             if (Objects.equals(usernames[i], username)) {

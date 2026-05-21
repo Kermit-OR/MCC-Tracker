@@ -20,13 +20,13 @@ public class MainController {
     @FXML
     Tab breakTimerTab;
 
-    @FXML
+    @FXML   //Line used for previous testing
     public void initialize() {
 
     }
-
+    //This is called on start disabling tabs on Scene startup
     public void disableTabs() {
-        System.out.println("Disabled tabs");
+       // System.out.println("Disabled tabs");
         if (dietTrackerTab != null) dietTrackerTab.setDisable(true);
         if (weightTrackerTab != null) weightTrackerTab.setDisable(true);
         if (homeworkTrackerTab != null) homeworkTrackerTab.setDisable(true);
@@ -34,8 +34,9 @@ public class MainController {
         if (breakTimerTab != null) breakTimerTab.setDisable(true);
     }
 
+    //This line is called when login in pressed and username and password are valid
     public void enableTabs() {
-        System.out.println("Enabled tabs");
+        //System.out.println("Enabled tabs");
         if (dietTrackerTab != null) dietTrackerTab.setDisable(false);
         if (weightTrackerTab != null) weightTrackerTab.setDisable(false);
         if (homeworkTrackerTab != null) homeworkTrackerTab.setDisable(false);
